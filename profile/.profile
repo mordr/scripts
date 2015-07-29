@@ -54,3 +54,18 @@ alias df='df -h'
 alias grep='grep --color=auto'
 
 alias svndiff='svn diff | colordiff'
+
+
+##############
+# More aliases
+##############
+alias jetty='MAVEN_OPTS="${MAVEN_NDBG_OPTS}" TZ=GMT mvn jetty:run'
+
+
+##########
+# jgitflow
+##########
+alias fstart='mvn jgitflow:feature-start'
+alias ffinish='mvn jgitflow:feature-finish'
+alias rstart='mvn jgitflow:release-start'
+alias rfinish='mvn jgitflow:release-finish'
