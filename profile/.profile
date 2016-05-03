@@ -39,6 +39,7 @@ MAVEN_DBG_OPTS="-Djetty.reload=automatic -Djetty.scanIntervalSeconds=10
 # Git
 #####
 alias glog='git log --graph --abbrev-commit --pretty=oneline'
+alias gstat='git log --stat'
 
 ###########################
 # Some aliases for laziness
