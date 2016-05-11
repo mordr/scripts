@@ -41,6 +41,9 @@ MAVEN_DBG_OPTS="-Djetty.reload=automatic -Djetty.scanIntervalSeconds=10
 alias glog='git log --graph --abbrev-commit --pretty=oneline'
 alias gstat='git log --stat'
 alias glogm="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gdif='git diff'
+alias gdifc='git diff --cached'
+alias gnames='git diff $1 $2 --name-only'
 
 ###########################
 # Some aliases for laziness
