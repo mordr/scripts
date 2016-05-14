@@ -14,7 +14,6 @@ parse_git_branch() {
   fi
 }
 
-# PS1='\[\033[00;32m\]\h\[\033[00;35m\]$(parse_git_branch)\[\033[00m\] \$ '
 PS1='\[\033[00;32m\]\h \[\033[00;37m\]\w\n\[\033[00;35m\]$(parse_git_branch)\[\033[00m\] \$ '
 
 
@@ -44,6 +43,7 @@ alias glogm="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Crese
 alias gdif='git diff'
 alias gdifc='git diff --cached'
 alias gnames='git diff $1 $2 --name-only'
+
 
 ###########################
 # Some aliases for laziness
