@@ -44,6 +44,7 @@ alias glogm="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Crese
 alias gdif='git diff'
 alias gdifc='git diff --cached'
 alias gnames='git diff $1 $2 --name-only'
+alias gdl='git branch -D'
 
 
 ###########################
