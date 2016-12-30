@@ -45,6 +45,8 @@ alias gdif='git diff'
 alias gdifc='git diff --cached'
 alias gnames='git diff $1 $2 --name-only'
 alias gdl='git branch -D'
+alias gco='git checkout'
+alias gcob='git checkout -b'
 
 
 ###########################
