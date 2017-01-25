@@ -67,12 +67,14 @@ alias grep='grep --color=auto'
 
 alias svndiff='svn diff | colordiff'
 
+alias bgrv="cat build.gradle | grep 'version\s\?=' | sed 's/version//' | sed 's/=//' | sed 's/'\''//g'"
+
 
 ##############
 # More aliases
 ##############
 alias jetty='MAVEN_OPTS="${MAVEN_NDBG_OPTS}" TZ=GMT mvn jetty:run'
-alias bgrv="cat build.gradle | grep 'version\s\?=' | sed 's/version//' | sed 's/=//' | sed 's/'\''//g'"
+
 
 ##########
 # jgitflow
