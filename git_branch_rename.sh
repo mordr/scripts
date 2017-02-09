@@ -1,6 +1,8 @@
 #!/bin/bash
 set -x
 
-git branch -m "${1}" "${2}"
-git push origin :"${1}"
-git push --set-upstream origin "${2}"
+OLD=$1
+NEW=$2
+git branch -m "${OLD}" "${NEW}"
+git push origin :"${OLD}"
+git push --set-upstream origin "${NEW}"
