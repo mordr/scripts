@@ -84,3 +84,9 @@ alias fstart='mvn jgitflow:feature-start'
 alias ffinish='mvn jgitflow:feature-finish'
 alias rstart='mvn jgitflow:release-start'
 alias rfinish='mvn jgitflow:release-finish'
+
+
+############
+# Kubernetes
+############
+alias k="/Users/RagibMorshed/.bricks/bin/kubectl"
