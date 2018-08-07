@@ -89,5 +89,5 @@ alias rfinish='mvn jgitflow:release-finish'
 ############
 # Kubernetes
 ############
-alias k="/Users/RagibMorshed/.bricks/bin/kubectl"
-alias o="/Users/RagibMorshed/working/golang/bin/operator-sdk"
+alias kc="/Users/RagibMorshed/.bricks/bin/kubectl"
+alias opsd="/Users/RagibMorshed/working/golang/bin/operator-sdk"
