@@ -55,7 +55,7 @@ alias pr='git webdiff HEAD'
 ###########################
 # Some aliases for laziness
 ###########################
-alias ll='ls -alG'
+alias ll='ls -alGh'
 alias cpr='cp -r'
 alias cl='clear; ls'
 alias psef='ps -ef | grep $1'
