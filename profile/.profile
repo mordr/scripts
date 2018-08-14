@@ -49,7 +49,7 @@ alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gbr='git branch'
 alias gst='git status'
-alias pr='git webdiff HEAD'
+alias gpr='git webdiff HEAD'
 
 
 ###########################
