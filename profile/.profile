@@ -75,6 +75,7 @@ alias bgrv="cat build.gradle | grep 'version\s\?=' | sed 's/version//' | sed 's/
 # More aliases
 ##############
 alias jetty='MAVEN_OPTS="${MAVEN_NDBG_OPTS}" TZ=GMT mvn jetty:run'
+alias utar='tar -xzf'
 
 
 ##########
