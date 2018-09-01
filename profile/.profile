@@ -17,6 +17,17 @@ parse_git_branch() {
 PS1='\[\033[00;32m\]\h \[\033[00;37m\]\w\n\[\033[00;35m\]$(parse_git_branch)\[\033[00m\] \$ '
 # PS1='\[\033[00;32m\]\h \[\033[00;37m\]\w\n\[\033[00;35m\]\[\033[00m\] \$ '
 
+# Alternately, use powerline-go
+# See https://github.com/justjanne/powerline-go
+# Add powerline-go
+#function _update_ps1() {
+#    PS1="$($GOPATH/bin/powerline-go \
+#        -newline -cwd-max-depth 1 -mode compatible -colorize-hostname)"
+#}
+#
+#if [ "$TERM" != "linux" ]; then
+#    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+#fi
 
 ############
 # Maven opts
