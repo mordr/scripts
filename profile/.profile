@@ -101,7 +101,7 @@ alias rfinish='mvn jgitflow:release-finish'
 ############
 # Kubernetes
 ############
-alias k='/Users/RagibMorshed/.bricks/bin/kubectl'
-alias o='/Users/RagibMorshed/working/golang/bin/operator-sdk'
+alias k='/usr/local/bin/kubectl'
+alias o='$GOPATH/bin/operator-sdk'
 alias kx='/usr/local/bin/kubectx'
 alias kn='/usr/local/bin/kubens'
