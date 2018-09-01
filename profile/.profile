@@ -23,8 +23,8 @@ PS1='\[\033[00;32m\]\h \[\033[00;37m\]\w\n\[\033[00;35m\]$(parse_git_branch)\[\0
 #function _update_ps1() {
 #    PS1="$(/Users/RagibMorshed/working/golang/bin/powerline-go \
 #        -newline -cwd-max-depth 5 -mode compatible -colorize-hostname\
-#        -max-width 95 -shell bash)"
-#}
+#        -max-width 95 -shell bash\
+#        -modules 'venv,host,ssh,cwd,perms,git,hg,jobs,exit,root')"
 #
 #if [ "$TERM" != "linux" ]; then
 #    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
