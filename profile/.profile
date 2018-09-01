@@ -21,8 +21,9 @@ PS1='\[\033[00;32m\]\h \[\033[00;37m\]\w\n\[\033[00;35m\]$(parse_git_branch)\[\0
 # See https://github.com/justjanne/powerline-go
 # Add powerline-go
 #function _update_ps1() {
-#    PS1="$($GOPATH/bin/powerline-go \
-#        -newline -cwd-max-depth 1 -mode compatible -colorize-hostname)"
+#    PS1="$(/Users/RagibMorshed/working/golang/bin/powerline-go \
+#        -newline -cwd-max-depth 5 -mode compatible -colorize-hostname\
+#        -max-width 95 -shell bash)"
 #}
 #
 #if [ "$TERM" != "linux" ]; then
