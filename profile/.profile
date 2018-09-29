@@ -106,3 +106,15 @@ alias k='/usr/local/bin/kubectl'
 alias o='$GOPATH/bin/operator-sdk'
 alias kx='/usr/local/bin/kubectx'
 alias kn='/usr/local/bin/kubens'
+
+###############
+# App related
+###############
+alias ch='open -a "Google Chrome" --args --profile-directory="Guest Profile"'
+alias saf='open -a "Safari"'
+alias fire='open -a "Firefox"'
+
+##################
+# jupyter notebook
+##################
+alias jnb='jupyter notebook'
