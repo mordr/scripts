@@ -19,9 +19,7 @@ echo "Current mac ${CURRENT_MAC}"
 # Some wireless interfaces are en1
 if [[ ${INTERFACE} = "en0" || ${INTERFACE} = "en1" ]]; then
     echo "Disassociating from any existing wireless networks"
-    # airport is a soft link to
-    # /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport
-    sudo airport -z
+    sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -z
 fi
 
 echo "Generating random mac address"
