@@ -1,0 +1,14 @@
+export GOPATH='/Users/rmorshed/go/'
+ 
+# Add powerline-go
+function _update_ps1() {
+    PS1="$($GOPATH/bin/powerline-go \
+        -newline -cwd-max-depth 5 -mode compatible -colorize-hostname\
+        -max-width 95 -shell bash\
+        -modules 'venv,host,user,ssh,cwd,perms,git,hg,jobs,exit,root')"
+}
+ 
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
