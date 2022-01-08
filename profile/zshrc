@@ -1,0 +1,30 @@
+    export GOPATH='/Users/rmorshed/powerline-go'
+     
+    # Add powerline-go
+    function powerline_precmd() {
+        PS1="$($GOPATH/powerline-go \
+    		-newline -cwd-max-depth 5 -mode compatible -colorize-hostname \
+    		-max-width 95 -shell zsh \
+    		-modules 'venv,host,user,ssh,cwd,perms,git,hg,jobs,exit,root')"
+    }
+     
+    function install_powerline_precmd() {
+      for s in "${precmd_functions[@]}"; do
+        if [ "$s" = "powerline_precmd" ]; then
+          return
+        fi
+      done
+      precmd_functions+=(powerline_precmd)
+    }
+     
+    if [ "$TERM" != "linux" ] && [ -f "$GOPATH/powerline-go" ]; then
+        install_powerline_precmd
+    fi
+     
+    # Java options
+    export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
+     
+    # aws cli autocompletion
+    autoload bashcompinit && bashcompinit
+    autoload -Uz compinit && compinit
+    complete -C '/usr/local/bin/aws_completer' aws
