@@ -62,12 +62,14 @@ alias gcob='git checkout -b'
 alias gbr='git branch'
 alias gst='git status'
 alias gpr='git webdiff HEAD'
+alias gpullr='git pull --rebase'
+alias gnvm='git reset --soft HEAD~1'
 
 
 ###########################
 # Some aliases for laziness
 ###########################
-alias ll='ls -alGh'
+alias l='ls -alGh'
 alias cpr='cp -r'
 alias cl='clear; ls'
 alias psef='ps -ef | grep $1'
@@ -77,10 +79,13 @@ alias ....='cd ../..'
 alias pd='pwd'
 alias df='df -h'
 alias grep='grep --color=auto'
-
+alias b=bat
+alias v=vim
+ 
 alias svndiff='svn diff | colordiff'
-
+ 
 alias bgrv="cat build.gradle | grep 'version\s\?=' | sed 's/version//' | sed 's/=//' | sed 's/'\''//g'"
+alias diff='colordiff'
 
 
 ##############
@@ -88,6 +93,11 @@ alias bgrv="cat build.gradle | grep 'version\s\?=' | sed 's/version//' | sed 's/
 ##############
 alias jetty='MAVEN_OPTS="${MAVEN_NDBG_OPTS}" TZ=GMT mvn jetty:run'
 alias utar='tar -xzf'
+
+alias tmuxl='tmux list-sessions'
+alias tmuxa='tmux attach-session -t $1'
+
+alias ccat="pygmentize -g"
 
 
 ##########
@@ -120,3 +130,8 @@ alias fire='open -a "Firefox"'
 # jupyter notebook
 ##################
 alias jnb='jupyter notebook'
+
+#######
+# Video
+#######
+alias video-res='ffprobe -v error -show_entries stream=width,height -of csv=p=0:s=x $1'
