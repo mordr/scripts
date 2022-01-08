@@ -33,7 +33,6 @@ PS1='\[\033[00;32m\]\h \[\033[00;37m\]\w\n\[\033[00;35m\]$(parse_git_branch)\[\0
 ############
 # Maven opts
 ############
-
 MAVEN_NDBG_OPTS="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9875
 -Dcom.sun.management.jmxremote.ssl=false
 -Dcom.sun.management.jmxremote.authenticate=false -Xms256m -Xmx2048m
