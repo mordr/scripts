@@ -69,6 +69,7 @@ alias gnvm='git reset --soft HEAD~1'
 # Some aliases for laziness
 ###########################
 alias l='ls -alGh'
+# alias l='exa --long --header --all --icons'
 alias cpr='cp -r'
 alias cl='clear; ls'
 alias psef='ps -ef | grep $1'
