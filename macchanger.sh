@@ -10,6 +10,7 @@ if [[ -z $1 ]]; then
     exit 1
 fi
 
+echo "#### Make sure to disconnect from wifi for silicon mac ####"
 echo "Updating mac for interface ${INTERFACE}"
 echo "Running as sudo"
 
